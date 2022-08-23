@@ -33,6 +33,7 @@
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/detail_container"
         android:name="com.example.android.sports.NewsDetailsFragment"
+        android:layout_weight="1"
         android:layout_width="300dp"
         android:layout_height="match_parent" />
 </androidx.slidingpanelayout.widget.SlidingPaneLayout>
