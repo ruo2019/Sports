@@ -45,6 +45,7 @@ class SportsListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val binding = FragmentSportsListBinding.bind(view)
         val slidingPaneLayout = binding.slidingPaneLayout
+        slidingPaneLayout.lockMode = SlidingPaneLayout.LOCK_MODE_LOCKED
         requireActivity().onBackPressedDispatcher.addCallback(
             viewLifecycleOwner,
             SportsListOnBackPressedCallback(slidingPaneLayout)
